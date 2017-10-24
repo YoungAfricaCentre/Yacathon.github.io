@@ -4,9 +4,9 @@ body {
 
 h1 {
 	font-family: 'Allerta Stencil';
-	font-size: 150px;
+	font-size: 130px;
 	color: white;/*#fff952;*/
-  position: centre-align;
+  position: "centre-align";
 
 }
 
