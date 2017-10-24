@@ -1,7 +1,18 @@
 $(document).ready(function() { 
 
+//animation to the header
+$('.date').hide();
+$('#navbr').hide();
 
-//hover for buttons
+//moving from main page to page with header and stuff
+$('.header').click(function(e) { 
+    $('.header').hide().show('slow');
+    $('.date').show('slow');
+    $('#navbr').show('slow');
+    $('#butt').hide();
+});
+	
+	//hover for buttons
 $('a').hover(function() {
 	$(this).css('background-color', 'white');},
 	function() {
@@ -14,21 +25,10 @@ $('button').hover(function() {
 	$(this).css('background-color', '#44d9e6')
 });
 
-
-
-
-//animation to the header
-$('.date').hide();
-$('#navbr').hide();
-
-//moving from main page to page with header and stuff
-$('.header').click(function(e) { 
-    $('.header').hide().show('slow');
-    $('.date').show('slow');
-    $('#navbr').show('slow');
-    $('#butt').hide();
-});
-
+	
+	
+	
+	
 
 //overlay for info button
 var $overlay = $('<div id="overlay"></div>'); //jQuery object
